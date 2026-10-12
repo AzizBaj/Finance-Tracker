@@ -1,5 +1,15 @@
 venv/
 __pycache__/
 *.pyc
-data/*.db
 .env
+
+# Local database (contains real transactions)
+*.db
+
+# Real bank data and anything generated from it - never commit
+data/private/
+output/
+
+# Safety net: ignore every CSV except the fake demo file
+*.csv
+!data/sample_demo.csv
