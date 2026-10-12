@@ -22,7 +22,4 @@ def parse_csv(path):
 
             
     return transactions
-if __name__ == "__main__":
-    data = parse_csv("data/private/trackerBankStatement.csv")
-    print(len(data))
-    print(data[0]["Amount"])
+

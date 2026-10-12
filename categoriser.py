@@ -2,6 +2,7 @@
 from parser import parse_csv
 from collections import defaultdict   
 
+#seperates each transaction into a dictionary of lists based on the transaction type (e.g. transfer,top up,exchange and card payment)
 def split_by_type(transactions):
     groups = defaultdict(list)
     for transaction in transactions:
